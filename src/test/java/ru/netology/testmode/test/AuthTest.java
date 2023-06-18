@@ -20,6 +20,7 @@ class AuthTest {
         open("http://localhost:9999");
     }
 
+    // Проведем функциональное позитивное тестирование сервиса --------------------------------
     // Тест подключения зарегистрированного пользователя
     @Test
     @DisplayName("Should successfully login with active registered user")
@@ -36,6 +37,7 @@ class AuthTest {
                         .shouldBe(visible);
     }
 
+    // Проведем функциональные негативные тесты сервиса ------------------------------------------
     // Тест подключения нерегистрированного пользователя
     @Test
     @DisplayName("Should get error message if login with not registered user")
